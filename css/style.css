@@ -1,0 +1,386 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #666;
+}
+
+.navbar .navbar-nav > li a:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #f25454 !important;
+}
+
+.navbar .navbar-nav > li a {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+}
+.bd {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.icon-fixed {
+  position: fixed;
+  top: 10rem;
+  left: 0;
+  z-index: 999999999999;
+}
+.tear {
+  width: 39px;
+  height: 39px;
+  background-color: #1f2528;
+  color: #fff;
+  padding: 10px;
+}
+.cap {
+  left: 50%;
+  top: 50%;
+}
+
+.slide1 {
+  background-image: url(../images/slideshow-1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide2 {
+  background-image: url(../images/slideshow-2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide3 {
+  background-image: url(../images/slideshow-3.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.trans {
+  transform: translateX(500%);
+}
+
+.trans h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.carousel-item.active .trans {
+  transform: translateX(0%);
+  transition: transform 0.7s ease-in-out;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px !important;
+  height: 50px !important;
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+  border-left: 0 !important;
+  border-bottom-right-radius: 3px !important;
+  transition: all 0.5s ease-in-out;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #fff;
+}
+
+.carousel-control-prev:hover i,
+.carousel-control-next:hover i {
+  color: #f25454 !important;
+}
+.cr-box1 {
+  position: absolute;
+  top: 18rem;
+  left: 0;
+}
+.cr-box2 {
+  border-top: 0 !important;
+  position: absolute;
+  top: 21rem;
+  left: 0;
+}
+
+.indicator {
+  position: absolute;
+  width: 26px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 13px;
+  bottom: 30px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.indicator:hover {
+  border: 1px solid #f25454;
+}
+
+.indicator:hover .ball {
+  background-color: #f25454;
+}
+
+.ball {
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  top: 6px;
+  animation: moving 2s ease-in-out infinite;
+}
+
+@keyframes moving {
+  50% {
+    top: 8px;
+  }
+  75% {
+    top: 12px;
+  }
+  100% {
+    top: 16px;
+  }
+}
+
+.hidden h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+}
+.hidden h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  color: #282828;
+}
+
+.hidden hr {
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  margin: 0 auto;
+  top: 105%;
+}
+
+.hidden:hover hr {
+  width: 60px;
+  transition: width 0.3s ease-in-out;
+}
+.about-p {
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.progress {
+  height: 4px;
+  margin-bottom: 20px;
+  background-color: #eee;
+  border-radius: 2px;
+}
+.progress .progress-bar {
+  background-color: #f25454;
+}
+.progress-value {
+  text-align: right;
+}
+.w-80 {
+  width: 80%;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.w-70 {
+  width: 70%;
+}
+.card {
+  border: 0 !important;
+}
+.card:hover img {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.layer {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(242, 84, 84, 0.85) !important;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.card:hover .layer {
+  opacity: 1;
+  transition: opacity;
+}
+.card:hover h5 {
+  color: #f25454;
+}
+.btn-contact {
+  background-color: #f25454;
+  color: #fff;
+}
+.btn-contact:hover {
+  background-color: #f38383;
+  color: #fff;
+}
+.services {
+  background-color: #fafafa;
+}
+.services-icon {
+  margin-right: 20px;
+  color: #f25454;
+  font-size: 32px;
+}
+.services-caption h3 {
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+}
+.services-caption:hover h3 {
+  color: #f25454;
+}
+
+.review-caption {
+  margin-top: 20px;
+}
+.review-caption h3 {
+  font-size: 16px;
+  color: #000;
+}
+.review-caption span {
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.reviews .carousel-indicators [data-bs-target] {
+  text-indent: 0;
+  width: 150px;
+  height: auto !important;
+  padding: 0 5px;
+  border: 0 !important;
+}
+
+.reviews .carousel-indicators {
+  position: static !important;
+}
+.reviews .carousel-inner {
+  top: 3rem !important;
+}
+
+.reviews .carousel-inner p {
+  font-size: 25px;
+}
+
+.carousel-indicators [data-bs-target].active img {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.contact {
+  background-color: #fafafa;
+}
+
+.contact-title {
+  font-family: "Poppins", sans-serif;
+  color: #282828;
+  font-weight: 600;
+  font-size: 32px;
+}
+.details {
+  border-bottom: 1px solid #eee;
+}
+.form-border {
+  border: 2px solid #eee;
+}
+.contact-submit {
+  background-color: #f25454;
+  color: #fff;
+}
+.contact-submit:hover {
+  background-color: #f38383;
+  color: #fff;
+}
+
+.end {
+  background: #222;
+}
+.map {
+  background-image: url(../images/dotted-map.png);
+  background-size: contain;
+  background-position: center center;
+}
+.arrow {
+  background-color: rgba(242, 84, 84, 0.5);
+
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer !important;
+}
+.arrow:hover {
+  background-color: #f25454;
+  color: #fff;
+}
+
+.f-details h5 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.f-details p {
+  color: #b0b0b0;
+  margin: 0 0 10px !important;
+  font-size: 14px;
+}
+
+.f-details p:hover {
+  color: #f25454;
+}
+.groups button {
+  margin-right: 4px;
+  color: #b0b0b0;
+  font-size: 13px;
+}
+.groups button:hover {
+  border-color: #f25454;
+  color: #f25454;
+  background-color: transparent;
+}
+.copyright {
+  background: #1a1a1a;
+}
+.copyright p {
+  color: #b0b0b0;
+}
+.copyright a:hover {
+  color: #f25454;
+}
+.copy {
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .trans h1 {
+    font-size: 40px;
+  }
+}
